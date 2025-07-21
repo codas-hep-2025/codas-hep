@@ -1,0 +1,56 @@
+name: codas-hep
+channels:
+  - conda-forge
+  - defaults
+#  - nvidia/label/cuda-12.4.1
+dependencies:
+  - python=3.11
+  - pip
+  - cxx-compiler
+  - zstandard
+  - zstd
+  - clang-tools
+  - fsspec
+  - lz4
+  - python-xxhash
+  - pyarrow
+  - cmake #needed to compile Geant examples
+  - openssh #otherwise ssh is broken due to bug with openssl it seems
+  - vim
+  - xrootd
+  - pip:
+      - astunparse
+      - awkward
+      - dm-haiku
+      - h5py
+      - hepunits
+      - hist
+      - ipympl
+      - jupyterlab-deck
+      - jupyterlab-mathjax3
+      - matplotlib
+      - numba
+      - numexpr
+      - numpy
+      - pandas
+      - particle
+      - protobuf
+      - pyarrow
+      - pybind11
+      - pyhf
+      - pyshp
+      - scikit-learn
+      - tables
+      - uproot
+      - vector
+      - mplhep
+      - requests
+      - aiohttp
+      - servicex
+      - bash_kernel
+      - fastjet
+      - fsspec-xrootd
+      - scikit-hep-testdata
+     
+variables:
+  LD_LIBRARY_PATH: "'$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/'"

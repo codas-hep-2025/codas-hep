@@ -1,0 +1,7 @@
+#!/bin/sh
+
+git clone --recurse-submodules https://github.com/iris-hep/codas-hep-2025
+
+rm -rf codas-hep-2025/binder
+
+exec "$@"
