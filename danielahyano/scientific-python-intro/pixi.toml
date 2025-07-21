@@ -1,0 +1,27 @@
+[workspace]
+authors = ["Henry Schreiner <henryschreineriii@gmail.com>"]
+channels = ["conda-forge"]
+name = "scientific-python-intro"
+platforms = ["osx-64", "osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[feature.lab.dependencies]
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+jupyterlab = "*"
+
+[feature.wasm.dependencies]
+jupyterlite-core-with-lab = "*"
+jupyterlite-pyodide-kernel = "*"
+
+[feature.lab.tasks]
+lab = "jupyter lab"
+
+[feature.wasm.tasks]
+wasm = "jupyter lite init && jupyter lite build --contents=notebooks"
+wasm-serve = { cmd = "jupyter lite serve", depends-on = ["wasm"] }
+
+[environments]
+lab = ["lab"]
+wasm = ["wasm"]
