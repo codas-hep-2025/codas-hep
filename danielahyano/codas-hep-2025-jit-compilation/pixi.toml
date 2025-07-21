@@ -1,0 +1,20 @@
+[workspace]
+authors = ["pfackeldey <fackeldey.peter@gmail.com>"]
+channels = ["conda-forge"]
+name = "codas-hep-2025-jit-compilation"
+platforms = ["osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[tasks.start]
+cmd = "jupyter lab"
+
+[dependencies]
+jax = "*"
+jaxlib= "*"
+jupyterlab = "*"
+jupyterlab-deck = "*"
+jupyterlab-mathjax3 = "*"
+matplotlib = "*"
+numba = "*"
+numpy = "*"
+python = "==3.13.5"
