@@ -1,0 +1,7 @@
+id,                version, os,    arch
+cp37-macos_arm64,  3.7,     macos, arm64
+cp38-macos_arm64,  3.8,     macos, arm64
+cp39-macos_arm64,  3.9,     macos, arm64
+cp37-macos_x86_64, 3.7,     macos, x86_64
+cp38-macos_x86_64, 3.8,     macos, x86_64
+cp39-macos_x86_64, 3.9,     macos, x86_64
