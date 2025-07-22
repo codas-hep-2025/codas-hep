@@ -1,0 +1,3 @@
+[submodule "CoDaS_HEP"]
+	path = CoDaS_HEP
+	url = https://github.com/tgmattso/CoDaS_HEP.git
