@@ -1,3 +1,9 @@
 [submodule "CoDaS_HEP"]
 	path = CoDaS_HEP
 	url = https://github.com/tgmattso/CoDaS_HEP.git
+[submodule "Princeton2025"]
+	path = Princeton2025
+	url = https://github.com/tgmattso/Princeton2025.git
+[submodule "GPU-CoDaSHEP-Princeton"]
+	path = GPU-CoDaSHEP-Princeton
+	url = https://github.com/brij01/GPU-CoDaSHEP-Princeton.git
